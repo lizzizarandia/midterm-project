@@ -42,7 +42,6 @@ li a {
   font-size: xx-large;
 }
 main {
-  /* height: 400vh; */
   background: linear-gradient(to bottom, black, #99b9da);
 }
 
@@ -133,7 +132,7 @@ main {
 }
 .built {
   margin-top: 100px;
-  height: 80vh;
+  height: 50vh;
   display: grid;
   grid-template-areas:
     "first first first"
@@ -143,7 +142,7 @@ main {
   
   gap: 40px;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 70px;
 }
 .first {
   grid-area: first;
@@ -159,7 +158,7 @@ main {
   grid-area: fourth;
 }
 .built div {
-  border: 1px white solid;
+  border: 1px black solid;
   border-radius: 20px;
   min-width: 25vw;
   max-height: 50vh;
@@ -258,5 +257,22 @@ main {
 
   }
 
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+  .who p {
+    font-size: medium;
+  }
+  .who h2 {
+    font-size: large;
+  }
+  .who section {
+    width: 400px;
+  }
 
 }
