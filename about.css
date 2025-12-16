@@ -19,7 +19,8 @@ header {
 header li {
   list-style: none;
 }
-li a {
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -151,7 +152,7 @@ main {
     "second third fourth"
     "second third fourth"
     "second third fourth";
-  
+
   gap: 40px;
   text-align: center;
 }
@@ -184,7 +185,7 @@ main {
 .built h3 {
   font-size: xxx-large;
   padding-top: 10px;
-  grid-column:1 ;
+  grid-column: 1;
   grid-row: 1/2;
 }
 .built p {
@@ -279,11 +280,7 @@ main {
 
 }
 
-
-
 @media screen and (max-width: 767px) {
-
-
   .who p {
     font-size: medium;
   }
@@ -293,5 +290,4 @@ main {
   .who section {
     width: 400px;
   }
-
 }
