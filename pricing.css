@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+   background: linear-gradient(to bottom,black);
+   display: flex; 
+   justify-content: space-between;
+   width: 100vw;
+   color: white;
+}
+.nav {
+   display: flex; 
+   justify-content: space-between;
+   width: 100%;
+   padding: 20px;
+}
+.h1 {
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -10px;
+    margin-left: -100px; 
+}
+.navigation {
+    display: flex;
+    list-style: none;
+    column-gap: 10px; 
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.icons {
+    display: flex;
+    list-style: none;
+    column-gap: 10px; 
+}
+.burger-icon {
+    display: none;
+}
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.pricing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    gap: 10px;
+    color: rgb(189, 189, 191);
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+}
+.pricing-title > p {
+    font-size: 17px;
+}
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+    border-color: #3d464e;
+}
+.card {
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.302);
+    background-color: rgba(245, 245, 245, 0.39);
+    transform: scale(0.9);
+    opacity: 0;
+    animation: zoomin 1s ease forwards;
+}
+.one {
+    animation-delay: 0.3s;
+}
+.two {
+    animation-delay: 0.7s;
+}
+.three {
+    animation-delay: 1s;
+}
+
+.card button {
+    background-color: transparent;
+    color: rgb(85, 3, 3);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 2px solid #292929;
+    text-transform: capitalize;
+    
+    transition: background-color 1.5s ease;
+}
+.card button:hover {
+    background-color: rgba(245, 245, 245, 0.636);
+}
+.card > h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card > p {
+    font-weight: 600;
+    color: darkred;
+    text-align: center;
+}
+.card > ul {
+    font-size: 20px;
+}
+.why-us {
+    max-width: 700px;
+    margin: 120px auto;
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.227);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeinup 0.8s ease-out 2s forwards;
+}
+.why-us h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(97, 3, 3, 0.686);
+    margin-bottom: 30px;
+}
+.why-us h2::after {
+    content:"";
+    display: block;
+    height: 3px;
+    background: #494c4f;
+    margin: 14px auto 0;
+    border-radius: 2px;
+}
+.why-us p {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(57, 57, 61);
+    margin-bottom: 20px;
+}
+.why-us span {
+    color: #810404ad;
+    font-weight: bolder;
+}
+.fadeinup {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+.gain-h2 {
+    display: flex;
+    justify-content: center;
+    color:  rgb(231, 231, 235);;
+    margin-top: 100px;
+}
+.gains-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    gap: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+.gain {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 2px rgb(63, 2, 2) solid;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.302);
+    width:80%;
+    background-color: rgba(70, 1, 1, 0.349);
+}
+.gain .text {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, max-height 0.3s;
+    font-size: large;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+.icon {
+    font-size: 30px;
+}
+.gain:hover {
+    transform:translateY(-10px)
+}
+.gain:hover .text {
+    opacity:1;
+    max-height: 100px;
+}
+   
+main {
+    background: linear-gradient(to bottom, black, #99b9da, #3d464e);
+}
+@keyframes fadeinup {
+    to {
+       opacity: 1;
+       transform: translateY(0);
+    }
+} 
+
+@keyframes zoomin {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+@media (max-width: 992px) {
+    .navigation {
+        display: none;
+    }
+    .nav {
+        flex-direction: column;
+        padding-left: 20px;
+        
+    }
+    .h1 {
+        display: flex;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .icons {
+        padding-left: 10px;
+    }
+    .burger-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    
+    }
+    .pricing-cards {
+       grid-template-columns: 1fr;
+    }
+    .gains-container {
+       grid-template-columns: 1fr;
+       
+    }
+    .why-us {
+    padding: 40px 20px;
+    margin: 80px 20px;
+    }
+    .why-us h2 {
+    font-size: 30px;
+    }
+   
+}
