@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  padding: 0 40px 0 40px;
+}
+.burger-icon {
+  display: none;
+}
+
+header li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.logo {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  flex: 1;
+  padding-left: 400px;
+  font-style: normal;
+  font-size: xx-large;
+}
+main {
+  background: linear-gradient(to bottom, black, #99b9da);
+
+  height: 400vh;
+}
+
+.popular {
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.courses {
+  color: white;
+  border: white 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  
+}
+.courses h4 {
+  font-size: larger;
+}
+.courses p {
+  font-size: large;
+  padding: 10px;
+}
+
+.sec1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.sec2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.sec3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.sec4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .burger-icon {
+    display: inline-block;
+  }
+  .nav {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+
+  .logo {
+    flex: 0;
+    padding-left: 0;
+  }
+  header {
+    padding: 10px;
+  }
+}

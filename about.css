@@ -9,6 +9,7 @@ header {
   background-color: black;
   color: white;
   height: 10vh;
+  padding: 0 40px 0 40px;
 }
 .burger-icon {
   display: none;
@@ -17,7 +18,8 @@ header {
 header li {
   list-style: none;
 }
-li a {
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -139,7 +141,7 @@ main {
     "second third fourth"
     "second third fourth"
     "second third fourth";
-  
+
   gap: 40px;
   text-align: center;
   padding: 70px;
@@ -164,16 +166,15 @@ main {
   max-height: 50vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
- grid-template-rows: repeat(2, 1fr);
- justify-content: center;
- align-items: center;
- text-align: center;
-
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .built h3 {
   font-size: xxx-large;
   padding-top: 10px;
-  grid-column:1 ;
+  grid-column: 1;
   grid-row: 1/2;
 }
 .built p {
@@ -181,12 +182,6 @@ main {
   grid-column: 1;
   grid-row: 2/3;
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 992px) {
   .burger-icon {
@@ -212,59 +207,52 @@ main {
     left: 40px;
   }
 
-    .instructors {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      gap: 40px;
-      margin-left: 30px;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
+  .instructors {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 40px;
+    margin-left: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 
-    .one {
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-    .two {
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
-    .three {
-      grid-column: 1/2;
-      grid-row: 3/4;
-    }
-    .four {
-      grid-column: 1/2;
-      grid-row: 4/5;
-    }
-    .five {
-      grid-column: 1/2;
-      grid-row: 5/6;
-    }
-    .six {
-      grid-column: 1/2;
-      grid-row: 6/7;
-    }
-    .seven {
-      grid-column: 1/2;
-      grid-row: 7/8;
-    }
-  
+  .one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .three {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .four {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .five {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .six {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .seven {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
   .built {
     justify-content: center;
     align-items: center;
-
   }
-
-
 }
 
-
-
 @media screen and (max-width: 767px) {
-
-
   .who p {
     font-size: medium;
   }
@@ -274,5 +262,4 @@ main {
   .who section {
     width: 400px;
   }
-
 }
