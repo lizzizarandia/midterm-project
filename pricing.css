@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
 }
@@ -38,7 +38,7 @@ a {
 }
 .burger-icon {
     display: none;
-}
+} */
 .pricing-section {
     display: flex;
     flex-direction: column;
@@ -222,7 +222,7 @@ main {
 
 }
 @media (max-width: 992px) {
-    .navigation {
+    /* .navigation {
         display: none;
     }
     .nav {
@@ -244,7 +244,7 @@ main {
         right: 20px;
         top: 25px;
     
-    }
+    } */
     .pricing-cards {
        grid-template-columns: 1fr;
     }
