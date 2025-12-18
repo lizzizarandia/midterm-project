@@ -1,45 +1,3 @@
-/* * {
-    padding: 0;
-    margin: 0;
-}
-header {
-   background-color: black;
-   display: flex; 
-   justify-content: space-between;
-   width: 100vw;
-   color: white;
-}
-.nav {
-   display: flex; 
-   justify-content: space-between;
-   width: 100%;
-   padding: 20px;
-}
-.h1 {
-    font-family: "Sekuya", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: -10px;
-    margin-left: -100px; 
-}
-.navigation {
-    display: flex;
-    list-style: none;
-    column-gap: 10px; 
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-.icons {
-    display: flex;
-    list-style: none;
-    column-gap: 10px; 
-}
-.burger-icon {
-    display: none;
-} */
-
 .main-img {
    position: relative;
    height: 80vh;
@@ -87,7 +45,7 @@ button:hover {
    background: linear-gradient(to bottom,black, #5d6f82, #3d464e)
 }
 h3 {
-    color: #8D9FA6;
+    color: #5169a0;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -158,22 +116,6 @@ h3 {
     }
 }
 @media (max-width: 992px) {
-    /* .navigation {
-        display: none;
-    }
-    .nav {
-        flex-direction: column;
-        padding-left: 20px;
-        
-    }
-    .h1 {
-        display: flex;
-        text-align: left;
-        margin-left: 10px;
-    }
-    .icons {
-        padding-left: 10px;
-    } */
     .main-img-text {
         padding: 20px;
         text-align: center;
