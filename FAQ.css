@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+main {
+  background: linear-gradient(to bottom, black, #99b9da);
+  height
+}
+.b-img {
+  position: relative;
+  height: 80vh;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -2,47 +2,7 @@
   padding: 0;
   margin: 0;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: white;
-  height: 10vh;
-  padding: 0 40px 0 40px;
-}
-.burger-icon {
-  display: none;
-}
 
-header li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-.logo {
-  font-family: "Sekuya", system-ui;
-  font-weight: 400;
-  flex: 1;
-  padding-left: 400px;
-  font-style: normal;
-  font-size: xx-large;
-}
 main {
   background: linear-gradient(to bottom, black, #99b9da);
 }
@@ -59,6 +19,7 @@ main {
 }
 .popular h2 {
   border: none;
+
 }
 .courses {
   color: white;
@@ -143,10 +104,7 @@ main {
   grid-column: 1;
   grid-row: 5/6;
 }
-.basic span {
-  text-decoration: line-through red;
-  font-size: x-large;
-}
+
 
 .basic {
   display: grid;
@@ -192,11 +150,11 @@ main {
   border-color: rgb(203, 203, 203);
   border-image: initial;
   transition: background-color 1.5s;
-  color: red;
+  color: black;
 }
 
 @media screen and (max-width: 992px) {
-  .burger-icon {
+  /* .burger-icon {
     display: inline-block;
   }
   .nav {
@@ -212,7 +170,7 @@ main {
   }
   header {
     padding: 10px;
-  }
+  } */
   .popular {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
