@@ -85,6 +85,13 @@ main {
   padding: 100px;
   padding-bottom: 70px;
 }
+.accordion h1 {
+  margin-bottom: 50px;
+  font-size: xx-large;
+
+}
+
+
 .accordion section {
   width: 900px;
   margin: 5px;
