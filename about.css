@@ -16,12 +16,24 @@ main {
 .who-p {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   max-width: 50%;
   font-size: x-large;
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 300;
-  font-style: normal
+  font-style: normal;
 }
+
+.who-p h1 {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px;
+  animation-name: typing;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
 .who-text {
   display: flex;
   gap: 150px;
@@ -33,7 +45,7 @@ main {
   top: 100px;
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 300;
-  font-style: normal; 
+  font-style: normal;
 }
 
 .instructors {
@@ -48,6 +60,7 @@ main {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 .inst {
@@ -109,7 +122,6 @@ main {
   gap: 40px;
   text-align: center;
   padding: 0 60px 50px 60px;
-  
 }
 .first {
   grid-area: first;
@@ -135,7 +147,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 .built h3 {
   font-size: xxx-large;
@@ -144,13 +155,12 @@ main {
   grid-row: 1/2;
 }
 .built p {
-  font-size:x-large;
+  font-size: x-large;
   grid-column: 1;
   grid-row: 2/3;
 }
-@media(max-width: 992px) {
-  
-   section {
+@media (max-width: 992px) {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,9 +175,8 @@ main {
   .academy img {
     border-radius: 0%;
     display: flex;
-  
   }
-    .instructors {
+  .instructors {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     gap: 40px;
@@ -177,59 +186,51 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    }
-    .one {
+  }
+  .one {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-    .two {
+  .two {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-    .three {
+  .three {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-    .four {
+  .four {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-    .five {
+  .five {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-    .six {
+  .six {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-    .seven {
+  .seven {
     grid-column: 1/2;
     grid-row: 7/8;
   }
-    .built {
+  .built {
     justify-content: center;
     align-items: center;
     padding: 0;
-  
   }
-    .built p {
-    font-size:medium;
+  .built p {
+    font-size: medium;
     max-width: 200px;
   }
-    
-
-
 }
 
-/* @media screen and (max-width: 767px) {
-  .who p {
-    font-size: medium;
+@keyframes typing {
+  from {
+    width: 0;
   }
-  .who h2 {
-    font-size: large;
-  }
-  .who section {
+  to {
     width: 400px;
   }
-  
-} */
+}
