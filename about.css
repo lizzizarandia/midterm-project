@@ -50,8 +50,11 @@ main {
   margin-left: 60px;
   justify-content: center;
   text-align: center;
-  align-items: center;
+  align-items: stretch;
   font-family: "Quattrocento Sans", sans-serif;
+}
+.pic {
+  max-width: 100%;
 }
 
 .inst {
@@ -63,6 +66,7 @@ main {
   left: 50px;
   gap: 20px;
   padding: 30px;
+  align-items: center;
 }
 .inst p {
   font-size: large;
@@ -216,13 +220,8 @@ main {
     font-size: medium;
     max-width: 200px;
   }
+  .one {
+    margin-top: 20px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  .instructors {
-    margin: 0;
-    margin-left: 20px;
-  }
-  .who-text h1 {
-  }
-}
