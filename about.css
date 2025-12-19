@@ -210,6 +210,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0;
+  
   }
     .built p {
     font-size:medium;
@@ -220,7 +221,7 @@ main {
 
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .who p {
     font-size: medium;
   }
@@ -230,4 +231,5 @@ main {
   .who section {
     width: 400px;
   }
-}
+  
+} */

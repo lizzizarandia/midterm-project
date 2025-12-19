@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./insights.css">
-    <link rel="stylesheet" href="./footer.css">
+    <title>insights page</title>
+    <link rel="stylesheet" href="./insights.css" />
+    <link rel="stylesheet" href="./footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,18 +23,18 @@
       <div class="nav">
         <nav>
           <ul class="navigation">
-            <li><a href="About">About</a></li>
+            <li><a href="./about.html">About</a></li>
             <li>
-              <a href="Pricing">Pricing</a>
+              <a href="./pricing.html">Pricing</a>
             </li>
             <li>
-              <a href="Courses">Courses</a>
+              <a href="./Courses.html">Courses</a>
             </li>
             <li>
-              <a href="gallery">gallery</a>
+              <a href="./insights.html">insights</a>
             </li>
             <li>
-              <a href="FAQ">FAQ</a>
+              <a href="./FAQ.html">FAQ</a>
             </li>
           </ul>
         </nav>
@@ -78,7 +78,145 @@
       </div>
     </header>
     <main>
-        <div></div>
+      <div class="insights-section">
+        <div class="insights-title">
+          <h2>Insights & Resources</h2>
+          <p>
+            Industry trends, learning tips, and career guidance from our
+            instructors.
+          </p>
+        </div>
+      </div>
+      <section class="insights-card">
+        <span class="insights-feature">Featured</span>
+        <h2>How to start a career in tech in 2025</h2>
+        <p>
+          A beginner-friendly guide to choosing the right tech path, building
+          real skills, and preparing for your first job in the industry.
+        </p>
+        <button class="insights-button">Read more</button>
+      </section>
+      <h3 class="insights-title2">Insights that guide your growth!</h3>
+      <section class="insights2">
+        <div class="inside">
+          <div class="insights-text one">
+            <span class="insights-top">career</span>
+            <h3>how to choose the right teck path</h3>
+            <p>
+              frontend, backend, data, or design? learn how to decide based on
+              your strengths and long-term goals.
+            </p>
+            <button>Read article</button>
+          </div>
+          <div class="insights-text two">
+            <span class="insights-top">Learning</span>
+            <h3>How beginners should approach coding</h3>
+            <p>
+              a realistic roadmap for learning programming without burnout or
+              confusion.
+            </p>
+            <button>Read article</button>
+          </div>
+          <div class="insights-text three">
+            <span class="insights-top">Skills</span>
+            <h3>Why real projects matter more than certificates</h3>
+            <p>
+              Discover why employers care more about what you can build than
+              what yoou can memorize
+            </p>
+            <button>Read article</button>
+          </div>
+        </div>
+        <div class="pic">
+          <img
+            src="https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="tech-img"
+            width="500px"
+            class="tech-img"
+          />
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews-title">What our students say!</h2>
+        <div class="review-grid">
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              SkillUp completely changed how I approach learning. The courses
+              are clear, practical, and easy to follow.
+            </p>
+            <span class="student">Tea D.</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐☆</div>
+            <p>
+              Very beginner-friendly and well structured. I finally feel
+              confident.
+            </p>
+            <span class="student">Sandro L.</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+              Best decision I made this year. Real projects and great mentor
+              support.
+            </p>
+            <span class="student">Lizi Z.</span>
+          </div>
+        </div>
+      </section>
     </main>
+    <hr />
+    <footer class="site-footer">
+      <div class="footer-div1">
+        <h2 class="logo-2">SKILLUP</h2>
+        <ul class="nav2">
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./pricing.html">Pricing</a>
+          </li>
+          <li>
+            <a href="./Courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="./insights.html">insights</a>
+          </li>
+          <li>
+            <a href="./FAQ.html">FAQ</a>
+          </li>
+        </ul>
+        <ul class="icons2">
+          <li>
+            <img
+              src="./assets/instagram (1).png"
+              alt="instagram"
+              width="20px"
+            />
+          </li>
+          <li>
+            <img src="./assets/facebook.png" alt="FB" width="20px" />
+          </li>
+          <li>
+            <img src="./assets/linkedin (1).png" alt="linkedin" width="20px" />
+          </li>
+          <li>
+            <img src="./assets/twitter.png" alt="twitter" width="20px" />
+          </li>
+        </ul>
+      </div>
+      <div class="footer-div2">
+        <div id="h2p">
+          <h2>Start your Journey in Tech</h2>
+          <p>
+            Enter your email to receive course details, schedules and current
+            offers
+          </p>
+        </div>
+        <input type="email" placeholder="example@mysite.com" />
+        <button class="footer-button">Submit</button>
+      </div>
+    </footer>
   </body>
 </html>
