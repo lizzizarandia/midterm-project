@@ -8,9 +8,12 @@ main {
 }
 
 .other {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: relative;
   height: 70vh;
-  background-image: url(./assets/faq.jpg);
+  background-image:linear-gradient(to top, black, transparent 20%), url(./assets/faq.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,8 +23,9 @@ main {
   width: 550px;
   color: white;
   position: absolute;
+  padding: 20px 0;
   right: 20px;
-  bottom: 20px;
+  bottom: 60px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -33,22 +37,21 @@ main {
   width: 400px;
   height: 100px;
   background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
   font-family: inherit;
-  color: white;
+  color: rgba(255, 255, 255, 0.91);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* box-sizing: border-box; */
   border-radius: 16px;
 }
 .email {
   width: 400px;
   background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
   font-size: 14px;
@@ -57,7 +60,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* box-sizing: border-box; */
   border-radius: 16px;
 }
 .other button {
@@ -70,20 +72,21 @@ main {
   border-radius: 100px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgb(203, 203, 203);
+  border-color: rgba(203, 203, 203, 0.91);
   border-image: initial;
   transition: background-color 1.5s;
   color: white;
 }
-
+.ask {
+  padding-bottom: 50px;
+}
 .accordion {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px;
-  padding-bottom: 70px;
+  padding: 20px;
 }
 .accordion section {
   width: 900px;
@@ -106,6 +109,7 @@ main {
   padding: 10px;
   color: #444;
   background-color: #e6ffff;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .sponsors {
   display: flex;
@@ -115,7 +119,9 @@ main {
   gap: 70px;
 }
 .sponsors h3 {
+  padding-top: 50px;
   font-size: xx-large;
+  color: white;
 }
 
 .sponsors-img {
@@ -134,8 +140,15 @@ main {
 
 
 @media (max-width: 992px) {
+  .other {
+   display: flex;
+   justify-content: center;
+  }
+  .other-text {
+   position: static;
+  }
   .accordion section {
-    width: 400px;
+    width: 100%
   }
   .sponsors-img {
     gap: 30px;
