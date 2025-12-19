@@ -5,6 +5,7 @@
 
 main {
   background: linear-gradient(to bottom, black, #99b9da);
+  width: 100%;
 }
 
 .academy img {
@@ -22,16 +23,6 @@ main {
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
-}
-
-.who-p h1 {
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px;
-  animation-name: typing;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .who-text {
@@ -159,6 +150,7 @@ main {
   grid-column: 1;
   grid-row: 2/3;
 }
+
 @media (max-width: 992px) {
   section {
     display: flex;
@@ -226,11 +218,11 @@ main {
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@media screen and (max-width: 767px) {
+  .instructors {
+    margin: 0;
+    margin-left: 20px;
   }
-  to {
-    width: 400px;
+  .who-text h1 {
   }
 }

@@ -6,7 +6,7 @@ header {
    background-color: rgb(0, 0, 0);
    display: flex; 
    justify-content: space-between;
-   width: 99vw;
+   width: 100%;
    color: white;
 }
 .nav {
