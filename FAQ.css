@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -130,15 +131,14 @@ main {
   font-size: xx-large;
   color: white;
 }
-
-.sponsors-img {
-  width: 80vw;
+.sponsors-pix {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-
+  gap: 70px;
 }
+
 .other-text {
   opacity: 0;
   animation: fadein 0.8s ease forwards;
@@ -164,7 +164,8 @@ main {
   .accordion section {
     width: 100%
   }
-  .sponsors-img {
-    gap: 30px;
+  .sponsors-pix {
+    display: flex;
+    flex-direction: column;
   }
 }

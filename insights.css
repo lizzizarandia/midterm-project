@@ -90,6 +90,7 @@ main {
 .tech-img {
     border-radius: 40px;
     object-fit: cover;
+    max-width: 100%;
     opacity: 0;
     animation: slideinleft 2s 2s ease forwards;
 }
@@ -131,19 +132,19 @@ main {
     color: #7aa2ff;
 }
 .insights-text h3{
-    font-size: 1.6rem;
+    font-size: 30px;
     margin-bottom: 12px;
     color: #f7f1f1eb;
 }
 .insights-text p {
-    font-size: 1rem;
+    font-size: 17px;
     line-height: 1.6;
     max-width: 650px;
     color: #b9b9c5;
     margin-bottom: 16px;
 }
 .insights-text button {
-    font-size: 0.95rem;
+    font-size: 15px;
     color: #7aa2ff;
     text-decoration: none;
     transition: opacity 0.3s ease;
@@ -178,11 +179,11 @@ main {
 }
 .stars {
     color: #f5b301;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 .reviews p {
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 1.6;
     color: #efebeb;
     margin-bottom: 20px;
