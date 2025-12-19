@@ -19,7 +19,6 @@ main {
 }
 .popular h2 {
   border: none;
-
 }
 .courses {
   color: white;
@@ -105,7 +104,6 @@ main {
   grid-row: 5/6;
 }
 
-
 .basic {
   display: grid;
   gap: 60px;
@@ -154,23 +152,6 @@ main {
 }
 
 @media screen and (max-width: 992px) {
-  /* .burger-icon {
-    display: inline-block;
-  }
-  .nav {
-    display: none;
-  }
-  .icons {
-    display: none;
-  }
-
-  .logo {
-    flex: 0;
-    padding-left: 0;
-  }
-  header {
-    padding: 10px;
-  } */
   .popular {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -193,19 +174,13 @@ main {
     grid-row: 4/5;
   }
 
-
   .basic {
-    grid-template-areas: 
-    'h4 h4'
-    'img img'
-    'p p'
-    'span button';
+    grid-template-areas:
+      "h4 h4"
+      "img img"
+      "p p"
+      "span button";
     gap: 20px;
   }
-
-
-
-
-
-
+  
 }
